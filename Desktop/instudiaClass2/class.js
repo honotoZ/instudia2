@@ -39,10 +39,12 @@ class grocery {
     setSerialnumber(serialnumber){
         this.serialnumber = serialnumber
     }
-} 
+}
 const peas = new grocery()
 const cucumber = new grocery('1kg','green','1002')
 peas.setSerialnumber('1005')
 peas.setColor('red')
 console.log(peas.getSerialnumber())
-console.log(peas.getColor()); 
+console.log(peas.getColor());
+
+
