@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <int>472</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-449.v6960d7c54c69">
+      <queuingDurationMillis>572</queuingDurationMillis>
+      <blockedDurationMillis>491</blockedDurationMillis>
+      <buildableDurationMillis>2</buildableDurationMillis>
+      <waitingDurationMillis>77</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+  </actions>
+  <queueId>4217</queueId>
+  <timestamp>1712207109702</timestamp>
+  <startTime>1712207109734</startTime>
+  <result>SUCCESS</result>
+  <duration>274</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/Users/newuser/.jenkins/workspace/MySecondJob2</workspace>
+  <hudsonVersion>2.449</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>
