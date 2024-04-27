@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  mysql-container:
+    image: mysql:8
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: capstonedb
+    ports:
+      - 3307:3306
+    restart: always
+
+  eureka-server:
+    build: ./backend-food-app/Eureka-server/
+    ports:
+      - 8761:8761
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  microservice1:
+    build: ./backend-food-app/backend-micro-service-food-app/
+    ports:
+      - 9090:9090
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+      - SPRING_APPLICATION_NAME=microservice1
+    depends_on:
+      - mysql-container
+      - eureka-server
+    restart: always
+
+  angular-container:
+    build: ./frontend-food-app/
+    container_name: angular-container
+    ports:
+      - 80:80
+    restart: always 

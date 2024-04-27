@@ -1,0 +1,56 @@
+
+<div class="container">
+    <div class="row">
+        <div class="cols-6">
+            <h2>Login Page</h2>
+        </div>
+    </div><br/>
+    <form class="form-group" [formGroup]="loginRef" (ngSubmit)="signIn()">
+        <div class="row">
+        <div class="col-3">
+            <label>EmailId</label>
+        </div>
+        <div class="col-3">
+            <input type="email" class="form-control" formControlName="emailid">
+        </div>    
+        </div><br/>
+      
+        <div class="row">
+            <div class="col-3">
+                <label>Password</label>
+            </div>
+            <div class="col-3">
+                <input type="password" class="form-control" formControlName="password">
+            </div>    
+            </div><br/>
+
+            <div class="row">
+                <div class="col-3">
+                    <label>TypeOfUser</label>
+                </div>
+                <div class="col-3">
+                    <input type="radio" formControlName="typeofuser" value="admin"> Admin
+                    <input type="radio" formControlName="typeofuser" value="customer"> Customer
+                </div>    
+            </div><br/>
+
+            <div class="row">
+                <div class="col-3">
+                    <input type="submit" value="signin" class="btn btn-success"/>
+                </div>
+                <div class="col-3">
+                    <input type="reset" value="reset" class="btn btn-info"/>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-3">
+                        <span style="color:red">{{msg}}</span>
+                </div>
+            </div>
+    </form><br/>  
+    <div class="row">
+        <div class="col-3">
+            <a routerLink="/signup" skipLocationChange="true">SignUp!</a>
+        </div>
+    </div>  
+</div>
