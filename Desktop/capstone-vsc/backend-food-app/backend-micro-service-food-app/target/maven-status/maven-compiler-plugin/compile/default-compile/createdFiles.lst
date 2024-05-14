@@ -1,0 +1,5 @@
+com/repository/LoginRepository.class
+com/BackendMicroServiceFoodAppApplication.class
+com/controller/LoginController.class
+com/service/LoginService.class
+com/entity/Login.class
