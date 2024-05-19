@@ -1,0 +1,22 @@
+#label {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#DecreaseBtn{
+    margin: 5px;
+    font-size: 20px;
+}
+#ResetBtn{
+    margin: 5px;
+    font-size: 20px;
+}
+#IncreaseBtn{
+    margin: 5px;
+    font-size: 20px;
+}

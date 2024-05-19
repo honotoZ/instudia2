@@ -3,9 +3,9 @@ function sayHello(){
     console.log("hello");
 }
 
-function greet(name, zxc){
+function greet(name, callback){
     console.log(`${name} says`);
-    zxc();
+    callback();
 }
 
 greet('honoto',sayHello);
